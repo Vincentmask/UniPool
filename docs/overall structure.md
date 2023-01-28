@@ -15,7 +15,12 @@ Then we will work on a top navigation bar to include different selections. The s
    - campus map should include a campus wide map specify campus building name and its acronym
    - on-campus job opportunity should contain open positions title, employer department, employer contact and a hyperlink to click for more details.
 4. College Courses page
+   - First choose major
+   - Display all chosen major’s classes, from low level to high level
+   - Click on class name should lead to new page descript the information of this class
 5. Discussion Board page
+   - Student can post discussion and be able to comment it
+   - Seperate to different categories of discussion
 6. About page
    - Specify the purpose of the web application
    - Specify development team people name and contact information
