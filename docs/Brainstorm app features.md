@@ -1,4 +1,4 @@
-Brainstorm a list of features that we would like the finished product to have.
+#Brainstorm a list of features that we would like the finished product to have.
 
 - Allow users to choose what college they are attending
 - Allow users to log into their account
