@@ -1,6 +1,7 @@
 Minimum vaiable product for our project.
 
 - Allow users to discover all college events (2 weeks)
+  - Post an event
   - Sort by date
   - Interest/like button
   - Link to the event details
