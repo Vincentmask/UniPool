@@ -5,52 +5,56 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <nav
-        class="navbar navbar-expand-md navbar-light"
-        style="background-color: #03b680"
-        ;
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #03b680"
+      ;
+    >
+      <a class="navbar-brand" href="/src/index.html">
+        <img src="/images/logo-no-background.png" height="50" width="50" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-          <a class="navbar-brand" href="/index.html">
-            <img src="/images/logo-no-background.png" height="50" width="50" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/index.html"
-                  >Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Resources.html">Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Campus Map.html">Campus Map</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Schoolarships.html">Schoolarships</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/On-campus Jobs.html"
-                  >On-campus Jobs</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/src/index.html">Home </a>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/Events.html">Events</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/Resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/Campus Map.html">Campus Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/Schoolarships.html">Schoolarships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/On-campus Jobs.html"
+              >On-campus Jobs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     `;
   }
 }
