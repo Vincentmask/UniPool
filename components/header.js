@@ -42,7 +42,7 @@ class Header extends HTMLElement {
             <a class="nav-link" href="../src/Campus Map.html">Campus Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../src/Schoolarships.html">Schoolarships</a>
+            <a class="nav-link" href="../src/Scholarships.html">Scholarships</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../src/On-campus Jobs.html"
