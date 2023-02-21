@@ -10,7 +10,7 @@ class Header extends HTMLElement {
       style="background-color: #03b680"
       ;
     >
-      <a class="navbar-brand" href="/src/index.html">
+      <a class="navbar-brand" href="../index.html">
         <img src="/images/logo-no-background.png" height="50" width="50" />
       </a>
       <button
@@ -30,22 +30,22 @@ class Header extends HTMLElement {
       >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/src/index.html">Home </a>
+            <a class="nav-link" href="../index.html">Home </a>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Events.html">Events</a>
+            <a class="nav-link" href="../src/Events.html">Events</a>
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Resources.html">Resources</a>
+            <a class="nav-link" href="../src/Resources.html">Resources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Campus Map.html">Campus Map</a>
+            <a class="nav-link" href="../src/Campus Map.html">Campus Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Schoolarships.html">Schoolarships</a>
+            <a class="nav-link" href="../src/Scholarships.html">Scholarships</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/On-campus Jobs.html"
+            <a class="nav-link" href="../src/On-campus Jobs.html"
               >On-campus Jobs</a
             >
           </li>
@@ -55,6 +55,7 @@ class Header extends HTMLElement {
         </ul>
       </div>
     </nav>
+
     `;
   }
 }
