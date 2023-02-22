@@ -15,12 +15,68 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-SDK_VERSION_NUMBER.js"></script>
+    <script defer src="/components/event.js"></script>
   </head>
   <body>
     <header-component></header-component>
     <div style="padding-left: 16px">
       <h2>Events page</h2>
       <p>Blabla.</p>
+    </div>
+    <button class="open-button" onclick="openPostForm()">Post an event</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Event</h1>
+
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Enter Title" name="title" required />
+
+        <label for="starttime"><b>Start Time</b></label
+        ><br />
+        <input
+          type="datetime"
+          placeholder="Enter starttime"
+          name="datetime"
+          required
+        /><br />
+        <label for="starttime"><b> End Time </b></label><br />
+        <input
+          type="datetime"
+          placeholder="Enter starttime"
+          name="datetime"
+          required
+        /><br />
+        <label for="description"><b>Description</b></label>
+        <input
+          type="text"
+          placeholder="Enter Description"
+          name="description"
+          required
+        />
+        <label for="location"><b>Location</b></label>
+        <input
+          type="text"
+          placeholder="Enter Description"
+          name="location"
+          required
+        />
+        <input type="text" list="type" />
+        <datalist id="type">
+          <option>Music</option>
+          <option>Culture</option>
+          <option>Sport</option>
+          <option>Study</option>
+          <option>other</option>
+        </datalist>
+        <label for="file"><b>Upload image</b></label>
+        <input type="file" name="upload" accept="image/*" />
+        <button type="submit" class="btn">Post</button>
+        <button type="button" class="btn cancel" onclick="closePostForm()">
+          Close
+        </button>
+      </form>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
