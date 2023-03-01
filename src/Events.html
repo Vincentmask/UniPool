@@ -15,18 +15,73 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="/components/database.js" type="text/javascript" defer></script>
+    <script src="/components/event.js" type="text/javascript" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/pg@8.6.0/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
   </head>
-  <body>
+  <body onload="getEvents()">
     <header-component></header-component>
     <div style="padding-left: 16px">
-      <h2>Events page</h2>
-      <p>Blabla.</p>
+      <div class="apiResultBlock" id="Output">
+        <span class="DisplayBox" id="Out"></span>
+      </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <button class="open-button" onclick="openPostForm()">Post an event</button>
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Post an Event</h1>
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Enter Title" id="title" name="title" />
+
+        <label for="start time"><b>Start Time</b></label
+        ><br />
+        <input
+          type="datetime-local"
+          placeholder="Enter start time"
+          name="datetime"
+          id="start time"
+        /><br />
+        <label for="end time"><b> End Time </b></label><br />
+        <input
+          type="datetime-local"
+          placeholder="Enter end time"
+          name="datetime"
+          id="end time"
+        /><br />
+        <label for="description"><b>Description</b></label>
+        <textarea class="form-control" rows="5" id="description"></textarea>
+        <label for="location"><b>Location</b></label>
+        <input
+          type="text"
+          placeholder="Enter Location"
+          name="location"
+          id="location"
+        />
+        <label for="more"><b>More info</b></label>
+        <input type="text" placeholder="More info" id="more" name="more" />
+        <!-- <input type="text" list="type" />
+        <label for="tag"><b>Tags</b></label>
+        <datalist id="type">
+          <option>Music</option>
+          <option>Culture</option>
+          <option>Sport</option>
+          <option>Study</option>
+          <option>other</option>
+        </datalist> -->
+        <label for="file"><b>Upload image</b></label>
+        <input type="file" id="fileupload" name="upload" accept="image/*" />
+        <button id="post" class="btn" onclick="postEvent()">Post</button>
+        <button type="button" class="btn cancel" onclick="closePostForm()">
+          Close
+        </button>
+      </form>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
