@@ -116,3 +116,23 @@
 .open-button:hover {
   opacity: 1;
 }
+
+/* --- Result Page Style */
+/* Result from API style  */
+div.apiResultBlock {
+  margin: auto;
+  display: table-cell;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Each result block Style */
+span.DisplayBox {
+  display: block;
+  padding: 16px 16px;
+  margin-right: 11px;
+  position: relative;
+}
