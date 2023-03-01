@@ -47,6 +47,7 @@
   background-repeat: no-repeat;
 }
 
+
 .open-button {
   background-color: #1748ce;
   color: white;
@@ -135,4 +136,26 @@ span.DisplayBox {
   padding: 16px 16px;
   margin-right: 11px;
   position: relative;
+
+.campus_map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campus_map_box {
+  width: auto;
+  object-fit: contain;
+}
+
+.job_info {
+  font-style: italic;
+  padding-left: 2%;
+}
+
+.job_title {
+  text-decoration: underline;
+  font-size: 16pt;
+  color: #171515;
+  font-weight: bold;
 }
