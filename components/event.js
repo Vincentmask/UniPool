@@ -42,7 +42,3 @@ function openPostForm() {
 function closePostForm() {
   document.getElementById('myForm').style.display = 'none';
 }
-
-function getURL(url) {
-  location.href = url;
-}
