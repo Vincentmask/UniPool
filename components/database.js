@@ -1,24 +1,4 @@
 function getEvents() {
-  /*
-  fetch(`http://35.167.218.101:3000/getEvents`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      console.log('bla');
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.error('There was a problem fetching the data:', error);
-    });
-  // const dataJson = localStorage.getItem('data.json');
-  // const data = JSON.parse(dataJson);
-  // console.log(data);
-  */
-
   const DB_NAME = 'myDatabase';
   const DB_VERSION = 2;
   const JSON_URL = '/data/events.json';
@@ -36,7 +16,7 @@ function getEvents() {
     const transaction = db.transaction(['Events'], 'readonly');
     const objectStore = transaction.objectStore('Events');
     var request = 0;
-    /*
+
     var request = objectStore.get(1);
     request.onerror = function (event) {
       console.error('Error getting JSON data:', event.target.errorCode);
@@ -55,21 +35,15 @@ function getEvents() {
             const putTransaction = db.transaction('Events', 'readwrite');
             const putObjectStore = putTransaction.objectStore('Events');
             data.forEach(function (item) {
-              const putRequest = putObjectStore.add({ id: `${item.id}`, item });
+              var putRequest = putObjectStore.add(item);
             });
-            putRequest.onerror = function (event) {
-              console.error('Error storing JSON data:', event.target.errorCode);
-            };
-            putRequest.onsuccess = function (event) {
-              console.log('JSON data stored in IndexedDB');
-            };
           })
           .catch((error) => {
             console.error('Error fetching JSON data:', error);
           });
       }
     };
-*/
+
     var result = '';
     request = objectStore.getAll();
     request.onsuccess = function (event) {
@@ -257,40 +231,6 @@ function postEvent() {
   document.getElementById('location').value = '';
   document.getElementById('more').value = '';
   document.getElementById('fileupload').value = '';
-  // const existingDataJson = localStorage.getItem('data.json');
-  // const existingData = JSON.parse(existingDataJson);
-
-  // const data = {
-  //   title: `${title}`,
-  //   starttime: `${starttime}`,
-  //   endtime: `${endtime}`,
-  //   description: `${description}`,
-  //   location: `${location}`,
-  //   fileUrl: `${fileUrl}`,
-  // };
-  // existingData.newItem = data;
-  // const updatedDataJson = JSON.stringify(existingData);
-  // localStorage.setItem('data.json', updatedDataJson);
-
-  // const query = `INSERT INTO "Events" ("ID", "Title", "Start", "Description", "End", "Image", "Location", "Type") VALUES ($1, $2, $3, $4, $5, $6, $7)`;
-  // const values = [
-  //   id,
-  //   title,
-  //   starttime,
-  //   description,
-  //   endtime,
-  //   fileUrl,
-  //   location,
-  // ];
-
-  // client.query(query, values, (err, res) => {
-  //   if (err) {
-  //     console.error(err);
-  //     return;
-  //   }
-  //   console.log('Data inserted successfully');
-  //   client.end();
-  // });
 }
 
 function s3upload() {
