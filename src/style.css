@@ -158,3 +158,13 @@ span.DisplayBox {
   color: #171515;
   font-weight: bold;
 }
+
+.res_title {
+  text-decoration: underline;
+  color: green;
+}
+
+.line_between_res {
+  padding-bottom: 2%;
+  display: block;
+}
