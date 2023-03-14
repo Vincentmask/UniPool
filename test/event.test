@@ -1,0 +1,34 @@
+// describe('readFileIntoIndexedDB', () => {
+//   let db;
+
+//   beforeEach(async () => {
+//     // Open a new database for each test.
+//     db = await openDB('test-db', 1, {
+//       upgrade(db) {
+//         db.createObjectStore('files', { keyPath: 'id' });
+//       },
+//     });
+//   });
+
+//   afterEach(() => {
+//     // Delete the test database after each test.
+//     db.close();
+//     indexedDB.deleteDatabase('test-db');
+//   });
+
+//   it('reads a file into indexedDB correctly', async () => {
+//     // Create a mock file object with some data.
+
+//     // Call the readFileIntoIndexedDB function.
+//     await readFileIntoIndexedDB(JSON_URL, db);
+
+//     // Retrieve the data from the database.
+//     const tx = db.transaction('files', 'readonly');
+//     const store = tx.objectStore('files');
+//     const savedFile = await store.get(1);
+
+//     // Check that the file was stored correctly.
+//     expect(savedFile.name).toBe('test.txt');
+//     expect(savedFile.content).toBe('hello world');
+//   });
+// });

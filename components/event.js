@@ -85,7 +85,7 @@ function putEvents() {
                           Description: ${item.description}</p>
                       <p class="card-text">
                           Location: ${item.location}</p>
-                      <a href="#" class="btn btn-primary" id="redirect" onClick = "GetURL(${item.more})">Get More</a>
+                      <a href="${item.more}" class="btn btn-primary" id="redirect" onClick = "window.open(${item.more})">Get More</a>
                   </div>
               </div>
           </div>`;
@@ -257,3 +257,5 @@ function s3upload() {
     }
   );
 }
+
+module.exports = { getEvents, openPostForm, closePostForm };

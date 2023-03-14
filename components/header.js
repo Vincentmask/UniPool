@@ -10,7 +10,7 @@ class Header extends HTMLElement {
       style="background-color: #03b680"
       ;
     >
-      <a class="navbar-brand" href="/index.html">
+      <a class="navbar-brand" href="./UniPool/index.html">
         <img src="/images/logo-no-background.png" height="50" width="50" />
       </a>
       <button
