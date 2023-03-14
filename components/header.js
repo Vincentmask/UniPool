@@ -30,27 +30,27 @@ class Header extends HTMLElement {
       >
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/index.html">Home </a>
+            <a class="nav-link" href="/UniPool/index.html">Home </a>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Events.html">Events</a>
+            <a class="nav-link" href="/UniPool/src/Events.html">Events</a>
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Resources.html">Resources</a>
+            <a class="nav-link" href="/UniPool/src/Resources.html">Resources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Campus Map.html">Campus Map</a>
+            <a class="nav-link" href="/UniPool/src/Campus Map.html">Campus Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/Scholarships.html">Scholarships</a>
+            <a class="nav-link" href="/UniPool/src/Scholarships.html">Scholarships</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/On-campus Jobs.html"
+            <a class="nav-link" href="/UniPool/src/On-campus Jobs.html"
               >On-campus Jobs</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/src/about.html">About Us</a>
+            <a class="nav-link" href="/UniPool/src/about.html">About Us</a>
           </li>
         </ul>
       </div>
