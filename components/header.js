@@ -11,7 +11,7 @@ class Header extends HTMLElement {
       ;
     >
       <a class="navbar-brand" href="/UniPool/index.html">
-        <img src="/images/logo-no-background.png" height="50" width="50" />
+        <img src="/UniPool/images/logo-no-background.png" height="50" width="50" />
       </a>
       <button
         class="navbar-toggler"
