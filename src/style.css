@@ -32,7 +32,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url('/images/logo-color.png');
+  background-image: url('/UniPool/images/logo-color.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@
 .masthead2 {
   height: 100vh;
   min-height: 500px;
-  background-image: url('/images/logo-no-background.png');
+  background-image: url('/UniPool/images/logo-no-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
