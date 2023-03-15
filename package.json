@@ -1,6 +1,8 @@
 {
   "devDependencies": {
+    "@testing-library/dom": "^9.0.1",
     "@testing-library/jest-dom": "^5.16.5",
+    "@webcomponents/webcomponentsjs": "^2.7.0",
     "jest": "^29.5.0",
     "jsdom": "^21.1.1",
     "live-server": "^1.2.2"
