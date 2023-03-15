@@ -36,9 +36,6 @@ class Header extends HTMLElement {
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/UniPool/src/Resources.html">Resources</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="/UniPool/src/Campus Map.html">Campus Map</a>
           </li>
           <li class="nav-item">
