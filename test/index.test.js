@@ -1,6 +1,5 @@
 const axios = require('axios');
 const { JSDOM } = require('jsdom');
-const { screen } = require('@testing-library/dom');
 require('@testing-library/jest-dom');
 let response;
 
