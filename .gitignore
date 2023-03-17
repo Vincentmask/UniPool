@@ -1,5 +1,4 @@
-/node_modules
-components/job.js
+node_modules
 node_modules/.bin/acorn
 node_modules/.bin/acorn~HEAD
 node_modules/.bin/browserslist
