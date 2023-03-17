@@ -9,7 +9,7 @@ function closePostForm() {
 function getEvents() {
   const DB_NAME = 'myDatabase';
   const DB_VERSION = 2;
-  const JSON_URL = '/data/events.json';
+  const JSON_URL = '/UniPool/data/events.json';
   const request = indexedDB.open(DB_NAME, DB_VERSION);
   request.onerror = function (event) {
     console.error('Error opening database:', event.target.errorCode);
