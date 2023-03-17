@@ -538,14 +538,4 @@ node_modules/tmp/README.md
 node_modules/update-browserslist-db/cli.js
 node_modules/which/bin/node-which
 node_modules/wrap-ansi/index.js
-package-lock.json
-package.json
-src/about.html
-src/Campus Map.html
-src/On-campus Jobs.html
-src/Resources.html
-src/Scholarships.html
-src/style.css
-test/about.test.js
-test/campus.test.js
-test/job.test.js
+
