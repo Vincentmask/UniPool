@@ -148,55 +148,55 @@ function getFile() {
   };
 }
 
-function putEventsTest(document) {
-  const DB_NAME = 'myDatabase';
-  const DB_VERSION = 2;
-  var request = indexedDB.open(DB_NAME, DB_VERSION);
-  request.onerror = function (event) {
-    console.error('Error opening database:', event.target.errorCode);
-  };
-  request.onsuccess = function (event) {
-    const db = event.target.result;
-    const transaction = db.transaction(['Events'], 'readonly');
-    const objectStore = transaction.objectStore('Events');
-    var result = '';
-    request = objectStore.getAll();
-    request.onsuccess = function (event) {
-      const data = event.target.result;
-      data.forEach(function (item) {
-        result += `
-          <div id="keyBoard" class="col-md-3 mt-2" style="display: inline-block; padding:0.5rem;">
-              <div class="card" style="width: auto; bg-success">
-                  <img src="${item.fileUrl}" >
-                  <div class="card-body" >
-                      <h5 class="card-title" id="itemName">${item.title}</h5>
-                      <p class="card-text"> 
-                          Start Time: ${item.starttime}</p>
-                      <p class="card-text"> 
-                          End Time: ${item.endtime}</p>
-                      <p class="card-text"">
-                          Description: ${item.description}</p>
-                      <p class="card-text">
-                          Location: ${item.location}</p>
-                      <a href="${item.more}" class="btn btn-primary" id="redirect" onClick = "window.open(${item.more})">Get More</a>
-                  </div>
-              </div>
-          </div>`;
-      });
-      const targetElement = document.querySelector('#Out');
-      const newElement = document.createElement('p');
-      newElement.textContent = result;
-      targetElement.appendChild(newElement);
-    };
+// function putEventsTest(document) {
+//   const DB_NAME = 'myDatabase';
+//   const DB_VERSION = 2;
+//   var request = indexedDB.open(DB_NAME, DB_VERSION);
+//   request.onerror = function (event) {
+//     console.error('Error opening database:', event.target.errorCode);
+//   };
+//   request.onsuccess = function (event) {
+//     const db = event.target.result;
+//     const transaction = db.transaction(['Events'], 'readonly');
+//     const objectStore = transaction.objectStore('Events');
+//     var result = '';
+//     request = objectStore.getAll();
+//     request.onsuccess = function (event) {
+//       const data = event.target.result;
+//       data.forEach(function (item) {
+//         result += `
+//           <div id="keyBoard" class="col-md-3 mt-2" style="display: inline-block; padding:0.5rem;">
+//               <div class="card" style="width: auto; bg-success">
+//                   <img src="${item.fileUrl}" >
+//                   <div class="card-body" >
+//                       <h5 class="card-title" id="itemName">${item.title}</h5>
+//                       <p class="card-text">
+//                           Start Time: ${item.starttime}</p>
+//                       <p class="card-text">
+//                           End Time: ${item.endtime}</p>
+//                       <p class="card-text"">
+//                           Description: ${item.description}</p>
+//                       <p class="card-text">
+//                           Location: ${item.location}</p>
+//                       <a href="${item.more}" class="btn btn-primary" id="redirect" onClick = "window.open(${item.more})">Get More</a>
+//                   </div>
+//               </div>
+//           </div>`;
+//       });
+//       const targetElement = document.querySelector('#Out');
+//       const newElement = document.createElement('p');
+//       newElement.textContent = result;
+//       targetElement.appendChild(newElement);
+//     };
 
-    request.onblocked = function (event) {
-      console.warn('Database blocked:', event.target.errorCode);
-    };
-    request.onversionchange = function (event) {
-      console.warn('Database version changed:', event.target.errorCode);
-    };
-  };
-}
+//     request.onblocked = function (event) {
+//       console.warn('Database blocked:', event.target.errorCode);
+//     };
+//     request.onversionchange = function (event) {
+//       console.warn('Database version changed:', event.target.errorCode);
+//     };
+//   };
+// }
 
 function postEvent() {
   const title = document.getElementById('title').value;
