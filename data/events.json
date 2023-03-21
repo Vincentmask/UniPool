@@ -1,9 +1,60 @@
 [
   {
+    "id": "1",
+    "title": "International Night",
+    "starttime": "2023-05-19 17:00",
+    "endtime": "2023-05-19 20:00",
+    "description": "After 3 years of absence, International Night is back. Please save the date! May 19th at 5PM. Organization of International Students (OIS) are working hard to plan the event and would love for you to join us as volunteers or performers. Please scan the QR codes on the flyer to sign up. We will meet up with our volunteers next term. This is a great way for you to get involve with OIS and other international students and practice planning the event with us! If you have any questions, feel free to contact ois@pdx.edu.",
+    "location": "Karl Miller Center",
+    "more": "",
+    "fileUrl": "https://unipoolimage.s3.us-west-2.amazonaws.com/unnamed+(1).png"
+  },
+
+  {
+    "id": "3",
+    "title": "Iftar Tuesdays",
+    "starttime": "March 28th, April 4th, 11th, and 18th",
+    "endtime": "NA",
+    "description": "The Rose City Book Pub will offer Iftar every Tuesday during Ramadan starting at sunset. Then it is the special for the next few days until it runs out. Offerings include choice of lamb or chicken kabsah, hummus, tabbouleh, tsatsiki, pita, and date.",
+    "location": "Rose City Book Club",
+    "more": "",
+    "fileUrl": "https://unipoolimage.s3.us-west-2.amazonaws.com/unnamed+(2).png"
+  },
+  {
+    "id": "4",
+    "title": "Outta this World Disco",
+    "starttime": "2023-03-16 18:00",
+    "endtime": "2023-03-16 20:30",
+    "description": "All the way from outer space - Come ready to groove at Outta This World Disco! Stop by Parkway North for games, face painting, and disco dancing! Intergalactic groovy space attired encouraged! ",
+    "location": "Parkway North SMSU",
+    "more": "",
+    "fileUrl": "https://unipoolimage.s3.us-west-2.amazonaws.com/unnamed.jpg"
+  },
+  {
+    "id": "5",
+    "title": "Pitch Slapped!",
+    "starttime": "2023-03-15 18:00",
+    "endtime": "2023-03-15 21:00",
+    "description": "Get ready to get Pitch Slapped! With a live showing of Pitch Perfect and free movie theater snacks! We will also be having a special performance and live riff-off by @thegreennote. Come join us with a blanket and some comfy clothes to get your pitch on!",
+    "location": "SMSU Ballroom",
+    "more": "",
+    "fileUrl": "https://unipoolimage.s3.us-west-2.amazonaws.com/unnamed+(1).jpg"
+  },
+  {
+    "id": "2",
+    "title": "Test Your Mood",
+    "starttime": "2023-03-15 15:30",
+    "endtime": "2023-03-15 17:00",
+    "description": "Test Your Mood on Wednesday, March 15th from 3:30-5pm with ISSS at the Karl Miller Center (KMC) 650 Lounge. Counseling is offering FREE mental health check-ups for PSU students. Tea and cookies will be provided. Students will also have the opportunity to enter into a raffle to win prizes. Hope to see you there!",
+    "location": "KMC 650 Lounge",
+    "more": "",
+    "fileUrl": "https://unipoolimage.s3.us-west-2.amazonaws.com/unnamed.png"
+  },
+  {
     "id": "1677630884306",
     "title": "Inclusion & Access  Craft & Cozy",
-    "starttime": "2023-02-23T16:00",
-    "endtime": "2023-02-23T18:00",
+    "starttime": "2023-02-23 16:00",
+    "endtime": "2023-02-23 18:00",
     "description": "Join the Inclusion & Access Committee for a relaxed craft night with snacks and tea! It will be on Thursday, February 23 from 4:00 - 6:00 PM. We'll have various crafts to keep your creativity flowing, so come on down and chill with us.",
     "location": "SMSU 333",
     "more": "https://t.e2ma.net/click/5eg2gj/9pnedrm/1v6ugcb",
@@ -12,9 +63,9 @@
   {
     "id": "1677630942944",
     "title": "Bowling & Indian Bites",
-    "starttime": "2023-03-02T16:00",
-    "endtime": "2023-03-02T18:00",
-    "description": "\nMore Info!\nJoin Basic Needs Hub, Food Pantry, International Student Office, Resource Center for Students with Children, and ASPSU Global Community! This Thursday from 2:00 - 4:00 we will share Indian food to comfort Indian students, the most significant international student population, with domestic students who might enjoy different cultural cuisine. Get to know everyone by creating a space to share food and play games together, and hopefully come together as a big Portland State Family!",
+    "starttime": "2023-03-02 16:00",
+    "endtime": "2023-03-02 18:00",
+    "description": "Join Basic Needs Hub, Food Pantry, International Student Office, Resource Center for Students with Children, and ASPSU Global Community! This Thursday from 2:00 - 4:00 we will share Indian food to comfort Indian students, the most significant international student population, with domestic students who might enjoy different cultural cuisine. Get to know everyone by creating a space to share food and play games together, and hopefully come together as a big Portland State Family!",
     "location": "Smith Game and Bowling Space",
     "more": "https://t.e2ma.net/click/tpg8hj/9pnedrm/5eowhcb",
     "fileUrl": "https://unipoolimage.s3.us-west-2.amazonaws.com/1677634236839unnamed+(2).jpg"
